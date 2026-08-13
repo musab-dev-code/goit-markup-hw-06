@@ -110,7 +110,7 @@ header {
   }
 }
 
-@media screen and (min-width: 320px) {
+
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -268,7 +268,6 @@ header {
     fill: #f4f4fd;
   }
 
-}
 
 .hero {
   display: flex;
@@ -426,7 +425,8 @@ img {
 
 .container {
   width: 100%;
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
