@@ -8,9 +8,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 100px;
   background-color: #ffffff;
-
+  height: 56px;
 }
 
 .header-container {
@@ -18,15 +17,15 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: #e7e9fc;
+  height: 100%;
 }
 
 .header-nav {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
 .logo {
-  margin-right: 100px;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -39,6 +38,23 @@ header {
 
 .logo-web {
   color: #4d5ae5;
+}
+
+.menu-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+}
+
+.menu-icon {
+  fill: #2e2f42;
+  display: block;
+}
+
+.menu-icon:focus {
+  fill: #404bbf;
 }
 
 .nav-list {
@@ -88,7 +104,7 @@ header {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   gap: 20px;
   font-style: normal;
 }
@@ -335,8 +351,12 @@ header {
   overflow: hidden;
 }
 
+.features-section {
+  padding: 96px 0;
+}
+
 .features-icon-wrapper {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 264px;
@@ -349,9 +369,10 @@ header {
 
 .features-list {
   display: flex;
-  gap: 0px;
+  gap: 96px;
   list-style: none;
   justify-content: center;
+  flex-direction: column;
 }
 
 .features-item,
@@ -426,7 +447,6 @@ img {
 .container {
   width: 100%;
   min-width: 320px;
-  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1015,5 +1035,22 @@ footer {
 .modal-submit-btn:focus {
   background-color: #404bbf;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
