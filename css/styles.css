@@ -120,6 +120,45 @@ header {
   color: #404bbf;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  flex-direction: column;
+}
+
+.portfolia-list {
+  margin: 0;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolia-item {
+  width: 100%;
+  border-bottom: 1px solid #e7e9fc;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-right: 0;
+}
+
+.portfolia-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolia-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -471,10 +510,17 @@ img {
     display: flex;
   }
 
+  .contacts-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px 20px;
+    row-gap: 40px;
+    column-gap: 20px;
   }
 
   .features-item {
@@ -497,6 +543,7 @@ img {
 
   .portfolia-list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .portfolia-item {
@@ -509,6 +556,11 @@ img {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    align-items: center;
   }
 
   .features-list {
@@ -587,14 +639,6 @@ img {
   height: 16px;
 }
 
-.team-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  list-style: none;
-  flex-direction: column;
-}
-
 .team-social-list {
   display: flex;
   justify-content: center;
@@ -666,37 +710,6 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
-}
-
-.portfolia-list {
-  margin: 0;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.portfolia-item {
-  width: 100%;
-  border-bottom: 1px solid #e7e9fc;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-right: 0;
-}
-
-.portfolia-item img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.portfolia-image-wrapper {
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolia-overlay {
